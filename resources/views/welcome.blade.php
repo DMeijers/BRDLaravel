@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        <link href="../../public/css/uikit.css">
         <style>
             html, body {
                 background-color: #fff;
@@ -95,5 +96,6 @@
                 </div>
             </div>
         </div>
+    <script src="../../public/js/uikit.js"></script>
     </body>
 </html>
