@@ -8,5 +8,7 @@
 @include('nav.navbar')
 @yield('header')
 @yield('content')
+@yield('article')
+@yield('footer')
 </body>
 </html>
