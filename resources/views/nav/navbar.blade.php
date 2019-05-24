@@ -1,21 +1,11 @@
-@extends('layouts.app')
+<nav class="uk-navbar-container">
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-parent" href="{{ route('homepage') }}"><a>Home</a></li>
+            <li class="uk-parent"><a href="{{ route('login') }}">Login</a></li>
+            <li class="uk-parent"><a href="{{ route('register') }}">Register</a></li>
+            <li class="uk-parent"><a href="{{ route('products') }}">Products</a></li>
+        </ul>
+    </div>
+</nav>
 
-@section('content')
-<header>
-    <nav class="uk-nav-header bg-dark">
-        @if (Route::has('login'))
-            <div class="top-right links">
-                @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                @else
-                    <a href="{{ route('login') }}">Login</a>
-
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
-                    @endif
-                @endauth
-            </div>
-        @endif
-    </nav>
-</header>
-@endsection

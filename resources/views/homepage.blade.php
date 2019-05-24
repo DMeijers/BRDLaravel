@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../js/uikit.js">
 </head>
 <body>
+@include('nav.navbar')
 @yield('header')
 @yield('content')
 </body>

@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', 'HomepageController@show');
+Route::get('/', ['as' => 'homepage', 'uses' => 'HomepageController@show']);
+
+Route::get('/product', ['as' => 'products', 'uses' => 'ProductController@show']);
+
 
 Auth::routes();
 
