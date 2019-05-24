@@ -1,7 +1,11 @@
-<html>
-<head><title>BDRLaravel Project</title></head>
+<html lang="nl">
+<head>
+    <title>BDRLaravel Project</title>
+    <link rel="stylesheet" href="../css/uikit.css">
+    <link rel="stylesheet" href="../js/uikit.js">
+</head>
 <body>
-<h1>this is a test</h1>
-{{$info}}
+@yield('header')
+@yield('content')
 </body>
 </html>
