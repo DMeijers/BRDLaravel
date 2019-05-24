@@ -15,7 +15,6 @@ Route::get('/', ['as' => 'homepage', 'uses' => 'HomepageController@show']);
 
 Route::get('/product', ['as' => 'products', 'uses' => 'ProductController@show']);
 
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
