@@ -24,7 +24,8 @@
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">Description</h3>
                             <p>{{$product->description}}</p>
-
+                            <p>Price: {{$product->price}}</p>
+                            <p>Stock: {{$product->stock}}</p>
                             <div class="uk-margin-left">
                                 <a class="uk-button uk-button-default uk-margin-auto-left" href="#">more</a>
                             </div>
