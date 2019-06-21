@@ -13,4 +13,8 @@ class ProductController extends Controller
 
         return view('product.product', ['products' => $products]);
     }
+
+    public function singleproduct($name){
+        dd($name);
+    }
 }

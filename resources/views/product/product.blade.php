@@ -27,7 +27,7 @@
                             <p>Price: {{$product->price}}</p>
                             <p>Stock: {{$product->stock}}</p>
                             <div class="uk-margin-left">
-                                <a class="uk-button uk-button-default uk-margin-auto-left" href="#">more</a>
+                                <a class="uk-button uk-button-default uk-margin-auto-left" href="{{ route('singleproduct',['name' =>  $product['name']]) }}">more</a>
                             </div>
                         </div>
                     </div>

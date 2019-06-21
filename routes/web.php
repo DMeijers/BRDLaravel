@@ -17,6 +17,8 @@ Route::get('/product', ['as' => 'products', 'uses' => 'ProductController@show'])
 
 Auth::routes();
 
+Route::get('product/{name}', 'ProductController@singleproduct')->name('singleproduct');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/products', 'ProductController@show');
